@@ -3,6 +3,7 @@ import Cabecalho from "../../Componentes/Cabecalho";
 import Menu from "../../Componentes/Menu";
 import banner from "../banner.png";
 import Rodape from "../../Componentes/Rodape";
+import Galeria from "../../Componentes/Galeria";
 
 const PaginaInicial = () => {
   return (
@@ -17,6 +18,9 @@ const PaginaInicial = () => {
           </div>
         </section>
       </main>
+      <div className={styles.galeria}>
+        <Galeria />
+      </div>
       <Rodape />
     </>
   );
