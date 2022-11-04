@@ -2,6 +2,7 @@ import styles from "./PaginaInicial.module.scss";
 import Cabecalho from "../../Componentes/Cabecalho";
 import Menu from "../../Componentes/Menu";
 import banner from "../banner.png";
+import Rodape from "../../Componentes/Rodape";
 
 const PaginaInicial = () => {
   return (
@@ -16,6 +17,7 @@ const PaginaInicial = () => {
           </div>
         </section>
       </main>
+      <Rodape />
     </>
   );
 };
