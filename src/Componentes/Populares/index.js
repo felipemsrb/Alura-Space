@@ -1,10 +1,20 @@
 import fotosPopulares from "./fotos-populares.json";
+import styles from "./Populares.module.scss";
 
 const Populares = () => {
   return (
-    <aside>
+    <aside className={styles.populares}>
       <h2>Populares</h2>
-      <ul></ul>
+      <ul className={styles.populares__imagens}>
+        {fotosPopulares.map((foto) => {
+          return (
+            <li key={foto.id}>
+              <img src={foto.path} alt={foto.alt}></img>
+            </li>
+          );
+        })}
+      </ul>
+      <button>Ver mais fotos</button>
     </aside>
   );
 };
