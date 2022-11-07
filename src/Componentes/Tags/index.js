@@ -1,6 +1,7 @@
 import styles from "./Tags.module.scss";
+import fotos from "../Galeria/Fotos.json";
 
-const Tags = ({ tags, filtraFotos }) => {
+const Tags = ({ tags, filtraFotos, setItens }) => {
   return (
     <div className={styles.tags}>
       <p>Filtre por tags:</p>
@@ -12,6 +13,7 @@ const Tags = ({ tags, filtraFotos }) => {
             </li>
           );
         })}
+        <li onClick={() => setItens(fotos)}>Todas</li>
       </ul>
     </div>
   );

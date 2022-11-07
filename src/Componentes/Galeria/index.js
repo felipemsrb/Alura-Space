@@ -20,7 +20,7 @@ const Galeria = () => {
   return (
     <section className={styles.galeria}>
       <h2>Navegue pela galeria</h2>
-      <Tags filtraFotos={filtraFotos} tags={tags} />
+      <Tags filtraFotos={filtraFotos} tags={tags} setItens={setItens} />
       <Cards item={itens} styles={styles} />
     </section>
   );
