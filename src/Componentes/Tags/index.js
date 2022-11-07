@@ -1,14 +1,13 @@
 import styles from "./Tags.module.scss";
 
-const Tags = () => {
+const Tags = ({ tags }) => {
   return (
     <div className={styles.tags}>
       <p>Filtre por tags:</p>
       <ul className={styles.tags__lista}>
-        <li>Estrelas</li>
-        <li>Galáxias</li>
-        <li>Lua</li>
-        <li>Planetas</li>
+        {tags.map((tag) => {
+          return <li key={tag}>{tag}</li>;
+        })}
       </ul>
     </div>
   );
